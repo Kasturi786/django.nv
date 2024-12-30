@@ -103,6 +103,9 @@ workflows:
       - oast:
           requires:
             - test
+      - oast-snyk:
+          requires:
+            - test
       - integration:
           requires:
             - oast
